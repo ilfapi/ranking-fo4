@@ -1,0 +1,310 @@
+.landing {
+	position: relative;
+	background: url('./assets/landing.jpg') no-repeat center center/cover;
+	height: 100vh;
+}
+
+.dark-overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+}
+
+.landing-inner {
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.landing-inner form {
+	width: 30%;
+}
+
+.landing-inner h1,
+.landing-inner h4,
+.landing-inner p {
+	color: white;
+}
+
+.spinner-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+/* Post button */
+.post-button {
+	padding-top: 0;
+	background: transparent;
+	border: none;
+}
+
+.post-button:hover {
+	background: transparent;
+}
+
+a.post-button.btn:focus,
+a.post-button.btn:active {
+	outline: none;
+	background: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+button.post-button.btn:focus,
+button.post-button.btn:active {
+	outline: none;
+	background: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+/* Floating add button */
+.btn-floating {
+	position: fixed;
+	right: 3rem;
+	bottom: 3rem;
+	background: transparent;
+	border: none;
+}
+
+.btn-floating:hover {
+	background: transparent;
+}
+
+.btn-floating:focus,
+.btn-floating:active {
+	outline: none;
+	background: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+/* Add new post tooltip */
+.tooltip {
+	background: transparent;
+}
+
+.tooltip .arrow::before {
+	border-left-color: #78c2ad;
+}
+
+.tooltip-inner {
+	background: #78c2ad;
+}
+
+/* Post border thicker */
+.border-success,
+.border-warning,
+.border-danger {
+	border-width: 2px;
+}
+
+/* Post title */
+.post-title {
+	margin-bottom: 0.5rem;
+}
+
+.bg-info {
+    color: #dcf2f8;
+    background: linear-gradient(45deg, #0288d1, #26c6da) !important;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 999999;
+}
+/*
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}*/
+
+.scroll-footer {
+  position: fixed;
+}
+.ds-none{
+	display: none;
+}
+
+.fontSize {
+  font-size: 16px;
+  color: black;
+}
+.headerAbout{
+	font-size: 25px;
+	font-weight: bold;
+	color: black!important;
+}
+
+.textAlignLeft{
+	text-align: left;
+	margin-left: 50px;
+}
+
+.post-button {
+	background: #fff0 !important
+}
+
+.post-button:hover {
+	background: #fff0 !important
+}
+
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus{
+	background: #007bff;
+	border-color: #007bff;
+	box-shadow: none;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:not(:disabled):not(.disabled):active,
+.dropdown-item:not(:disabled):not(.disabled).active:focus,
+.dropdown-item:not(:disabled):not(.disabled):active:focus{
+	background: linear-gradient(45deg, #0288d1, #26c6da) !important;
+	color: #fff !important;
+}
+
+.dropdown-item-a>a {
+	color: #000 !important;
+}
+
+.dropdown-item-a:hover,{
+	color: #fff !important;
+}
+
+.alertOverPercent30 {
+	background: #d30000;
+	color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: rgba(255,255,255) !important
+}
+
+.bordereTable {
+	border: 1px solid rgba(0, 0, 0, 0.12) !important;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pagination > button,
+.pagination > span {
+  background-color: #fff;
+  color: #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin: 0 5px 8px;
+  border-radius: 5px;
+  min-width: 20px;
+  padding: 0 10px;
+  height: 40px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  position: relative;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.pagination > span {
+  pointer-events: none;
+}
+.pagination svg {
+  height: 24px;
+  width: 24px;
+}
+.pagination > button.page-active {
+  background-color: #007bff; 
+  color: #fff;
+}
+.pagination > button:hover {
+  background-color: #007bff; 
+  color: #fff;
+}
+
+.pagination > button:disabled {
+	cursor: not-allowed;
+}
+
+.sort-by {
+	cursor: pointer;
+	font-size: 11px;
+}
+
+.dropdown-item{
+  display: block;
+  width: 100%;
+  padding: 0px !important;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.dropdown-item > a {
+	padding: .25rem 1.5rem !important;
+  display: inherit;
+  width: 100%;
+}
+
+.dropdown-item-id-a {
+	padding: .25rem 1.5rem !important;
+}
+
+.landing-home {
+	position: relative;
+/*	background: url('./assets/landing.jpg') no-repeat center center/cover;*/
+/*	height: 100vh;*/
+	margin-top: 18%;
+}
+
+.dark-overlay-home {
+/*	background-color: rgba(0, 0, 0, 0.5);*/
+	height: 100%;
+}
+
+.landing-inner-home {
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.landing-inner-hone form {
+	width: 30%;
+}
+
+.landing-inner-hone h1,
+.landing-inner-hone h4,
+.landing-inner-hone p {
+	color: black;
+}

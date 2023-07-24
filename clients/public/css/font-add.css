@@ -1,0 +1,5 @@
+@font-face {
+    font-family: Beba;
+    src: local('UTMBebas'), url("fonts/UTMBebas.eot") format("embedded-opentype"),url("/fonts/UTMBebas.woff") format("woff"),url("/fonts/UTMBebas.ttf") format("truetype"),url("/fonts/UTMBebas.svg#UTMBebas") format("svg");
+    font-weight: 500
+}
