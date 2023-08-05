@@ -12953,183 +12953,492 @@ const Home = () => {
 
 	const topAllStarts = getHomes.payload.top.all_stars
 	const prefixImg = getHomes.payload.prefix
-
-	const PositionFW = ({ all_stars_fw }) => {
-		console.log(123, all_stars_fw)
-		// all_stars_fw.map(fw => {
-		// 	return (
-		// 		<>
-		// 			<div className="pos-1" data-tip="" data-for="tooltip-1" currentitem="false">
-		// 				<img src="https://cdn.vn.garenanow.com/fo3vn/project/Ranking/Cards/ICONS_Card.png" alt="" className="b-card" />
-		// 				<div className="wrap-player-info">
-		// 					<img src="https://cdn-fo4.garenanow.com/games/fo4vn/externalAssets/common/playersAction/p101037576.png" alt="" className="player-avatar" /><span className="player-name">Ronaldo</span>
-		// 					<span className="player-grade"><img src="http://cdn.vn.garenanow.com/fo3vn/project/Ranking/Grade/+7.png" alt="" /></span><span className="player-overal">125</span><span className="player-salary">28</span>
-		// 					<span className="player-pos">FW</span>
-		// 				</div>
-		// 				<span className="b-player-name">
-		// 					<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/b-player-name.png" alt="" />
-		// 					<div className="wrap-p-name-txt">
-		// 						<span>39,400,000,000,000 BP</span>
-		// 						<hr />
-		// 						<marquee behavior="" direction="" scrollamount="3" className="bi"><span>XMEN&nbsp;VinhTậpSút</span><span>XMEN&nbsp;HùngPhương</span><span>USA&nbsp;Kinh&nbsp;Tâm</span><span>TimeMan8888</span></marquee>
-		// 					</div>
-		// 				</span>
-		// 				<div className="__react_component_tooltip place-right type-light" id="tooltip-1" data-id="tooltip" style={{left: "377px", top: "103px", display: "none"}}>
-		// 					<div className="tool-tip-prod">
-		// 						<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/tooltip_top.png" alt="" className="img-pop-top" />
-		// 						<div className="tooltip-content">
-		// 							<div className="icon"><img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/t_logo_1.png" alt="" /></div>
-		// 							<ul className="list-player">
-		// 								<li><span>XMEN&nbsp;VinhTậpSút</span></li>
-		// 								<li><span>XMEN&nbsp;HùngPhương</span></li>
-		// 								<li><span>USA&nbsp;Kinh&nbsp;Tâm</span></li>
-		// 								<li><span>TimeMan8888</span></li>
-		// 							</ul>
-		// 						</div>
-		// 						<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/tooltip_bot.png" alt="" className="img-pop-bot" />
-		// 					</div>
-		// 				</div>
-		// 			</div>
-		// 		</>
-		// 	)
-		// }
-		// return (
-		// 	<>
-		// 		{
-		// 			all_stars_fw.map((fw, i) => {
-		// 				<div className="pos-1" data-tip="" data-for="tooltip-1" currentitem="false">
-		// 					<img src="https://cdn.vn.garenanow.com/fo3vn/project/Ranking/Cards/ICONS_Card.png" alt="" className="b-card" />
-		// 					<div className="wrap-player-info">
-		// 						<img src="https://cdn-fo4.garenanow.com/games/fo4vn/externalAssets/common/playersAction/p101037576.png" alt="" className="player-avatar" /><span className="player-name">Ronaldo</span>
-		// 						<span className="player-grade"><img src="http://cdn.vn.garenanow.com/fo3vn/project/Ranking/Grade/+7.png" alt="" /></span><span className="player-overal">125</span><span className="player-salary">28</span>
-		// 						<span className="player-pos">FW</span>
-		// 					</div>
-		// 					<span className="b-player-name">
-		// 						<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/b-player-name.png" alt="" />
-		// 						<div className="wrap-p-name-txt">
-		// 							<span>39,400,000,000,000 BP</span>
-		// 							<hr />
-		// 							<marquee behavior="" direction="" scrollamount="3" className="bi"><span>XMEN&nbsp;VinhTậpSút</span><span>XMEN&nbsp;HùngPhương</span><span>USA&nbsp;Kinh&nbsp;Tâm</span><span>TimeMan8888</span></marquee>
-		// 						</div>
-		// 					</span>
-		// 					<div className="__react_component_tooltip place-right type-light" id="tooltip-1" data-id="tooltip" style={{left: "377px", top: "103px", display: "none"}}>
-		// 						<div className="tool-tip-prod">
-		// 							<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/tooltip_top.png" alt="" className="img-pop-top" />
-		// 							<div className="tooltip-content">
-		// 								<div className="icon"><img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/t_logo_1.png" alt="" /></div>
-		// 								<ul className="list-player">
-		// 									<li><span>XMEN&nbsp;VinhTậpSút</span></li>
-		// 									<li><span>XMEN&nbsp;HùngPhương</span></li>
-		// 									<li><span>USA&nbsp;Kinh&nbsp;Tâm</span></li>
-		// 									<li><span>TimeMan8888</span></li>
-		// 								</ul>
-		// 							</div>
-		// 							<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/tooltip_bot.png" alt="" className="img-pop-bot" />
-		// 						</div>
-		// 					</div>
-		// 				</div>
-		// 			})
-		// 		}
-		// 	</>
-		// )
+	console.log(123, topAllStarts)
+	const PositionFW = ({ all_stars }) => {
+		const divA = all_stars.players.map((fw, i)=> {
+			let pos = `pos-${(i+1)}`
+			let tooltip = `tooltip-${i+1}`
+			let imgCard = fw.card
+			let playerAvatar = `https://cdn-fo4.garenanow.com/games/fo4vn/externalAssets/common/${fw.image}`
+			let playerName = fw.name
+			let playerGrade = `http://cdn.vn.garenanow.com/fo3vn/project/Ranking/Grade/+${fw.grade}.png`
+			let playerOveral = fw.overall
+			let playerSalary = fw.salary
+			let playerPos = fw.pre_pos
+			let playerPrice = `${fw.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} BP`
+			let listOwner = fw.owner;
+			return (
+				<>
+					<div key={fw.spid} className={pos} data-tip="" data-for={tooltip} currentitem="false">
+						<img src={imgCard} alt="" className="b-card" />
+						<div className="wrap-player-info">
+							<img src={playerAvatar} alt="" className="player-avatar" />
+							<span className="player-name">{playerName}</span>
+							<span className="player-grade">
+								<img src={playerGrade} alt="" />
+							</span>
+							<span className="player-overal">{playerOveral}</span>
+							<span className="player-salary">{playerSalary}</span>
+							<span className="player-pos">{playerPos}</span>
+						</div>
+						<span className="b-player-name">
+							<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/b-player-name.png" alt="" />
+							<div className="wrap-p-name-txt">
+								<span>{playerPrice}</span>
+								<hr />
+								<marquee behavior="" direction="" scrollamount="3" className="bi">
+									{
+										listOwner.length > 0 ? 
+											listOwner.map(owner => {
+												return (
+													<>
+														<span>{owner.name}</span>
+													</>
+												)
+											})
+										: <></>
+									}
+									</marquee>
+							</div>
+						</span>
+						<div className="__react_component_tooltip place-right type-light" id="tooltip-1" data-id="tooltip" style={{left: "377px", top: "103px", display: "none"}}>
+							<div className="tool-tip-prod">
+								<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/tooltip_top.png" alt="" className="img-pop-top" />
+								<div className="tooltip-content">
+									<div className="icon"><img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/t_logo_1.png" alt="" /></div>
+									<ul className="list-player">
+										{
+											listOwner.length > 0 ? 
+											listOwner.map(owner => {
+												return (
+													<>
+														<li><span>{owner.name}</span></li>
+													</>
+												)
+											})
+										: <></>
+										}
+									</ul>
+								</div>
+								<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/tooltip_bot.png" alt="" className="img-pop-bot" />
+							</div>
+						</div>
+					</div>
+				</>
+			)
+		})
+		
+		return (
+			<>
+				{divA}
+			</>
+		)
 	}
 
-	// const PositionFW = (all_stars_fw) => {
+	const PositionMF = ({ all_stars }) => {
+		const divA = all_stars.players.map((fw, i)=> {
+			let pos = `pos-${(i+4)}`
+			let tooltip = `tooltip-${i+4}`
+			let imgCard = fw.card
+			let playerAvatar = `https://cdn-fo4.garenanow.com/games/fo4vn/externalAssets/common/${fw.image}`
+			let playerName = fw.name
+			let playerGrade = `http://cdn.vn.garenanow.com/fo3vn/project/Ranking/Grade/+${fw.grade}.png`
+			let playerOveral = fw.overall
+			let playerSalary = fw.salary
+			let playerPos = fw.pre_pos
+			let playerPrice = `${fw.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} BP`
+			let listOwner = fw.owner;
+			return (
+				<>
+					<div key={fw.spid} className={pos} data-tip="" data-for={tooltip} currentitem="false">
+						<img src={imgCard} alt="" className="b-card" />
+						<div className="wrap-player-info">
+							<img src={playerAvatar} alt="" className="player-avatar" />
+							<span className="player-name">{playerName}</span>
+							<span className="player-grade">
+								<img src={playerGrade} alt="" />
+							</span>
+							<span className="player-overal">{playerOveral}</span>
+							<span className="player-salary">{playerSalary}</span>
+							<span className="player-pos">{playerPos}</span>
+						</div>
+						<span className="b-player-name">
+							<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/b-player-name.png" alt="" />
+							<div className="wrap-p-name-txt">
+								<span>{playerPrice}</span>
+								<hr />
+								<marquee behavior="" direction="" scrollamount="3" className="bi">
+									{
+										listOwner.length > 0 ? 
+											listOwner.map(owner => {
+												return (
+													<>
+														<span>{owner.name}</span>
+													</>
+												)
+											})
+										: <></>
+									}
+									</marquee>
+							</div>
+						</span>
+						<div className="__react_component_tooltip place-right type-light" id="tooltip-1" data-id="tooltip" style={{left: "377px", top: "103px", display: "none"}}>
+							<div className="tool-tip-prod">
+								<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/tooltip_top.png" alt="" className="img-pop-top" />
+								<div className="tooltip-content">
+									<div className="icon"><img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/t_logo_1.png" alt="" /></div>
+									<ul className="list-player">
+										{
+											listOwner.length > 0 ? 
+											listOwner.map(owner => {
+												return (
+													<>
+														<li><span>{owner.name}</span></li>
+													</>
+												)
+											})
+										: <></>
+										}
+									</ul>
+								</div>
+								<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/tooltip_bot.png" alt="" className="img-pop-bot" />
+							</div>
+						</div>
+					</div>
+				</>
+			)
+		})
 		
-	// 	return (
-	// 		<>
-	// 			<div className="pos-1" data-tip="" data-for="tooltip-1" currentitem="false">
-	// 				<img src="https://cdn.vn.garenanow.com/fo3vn/project/Ranking/Cards/ICONS_Card.png" alt="" className="b-card" />
-	// 				<div className="wrap-player-info">
-	// 					<img src="https://cdn-fo4.garenanow.com/games/fo4vn/externalAssets/common/playersAction/p101037576.png" alt="" className="player-avatar" /><span className="player-name">Ronaldo</span>
-	// 					<span className="player-grade"><img src="http://cdn.vn.garenanow.com/fo3vn/project/Ranking/Grade/+7.png" alt="" /></span><span className="player-overal">125</span><span className="player-salary">28</span>
-	// 					<span className="player-pos">FW</span>
-	// 				</div>
-	// 				<span className="b-player-name">
-	// 					<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/b-player-name.png" alt="" />
-	// 					<div className="wrap-p-name-txt">
-	// 						<span>39,400,000,000,000 BP</span>
-	// 						<hr />
-	// 						<marquee behavior="" direction="" scrollamount="3" className="bi"><span>XMEN&nbsp;VinhTậpSút</span><span>XMEN&nbsp;HùngPhương</span><span>USA&nbsp;Kinh&nbsp;Tâm</span><span>TimeMan8888</span></marquee>
-	// 					</div>
-	// 				</span>
-	// 				<div className="__react_component_tooltip place-right type-light" id="tooltip-1" data-id="tooltip" style={{left: "377px", top: "103px", display: "none"}}>
-	// 					<div className="tool-tip-prod">
-	// 						<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/tooltip_top.png" alt="" className="img-pop-top" />
-	// 						<div className="tooltip-content">
-	// 							<div className="icon"><img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/t_logo_1.png" alt="" /></div>
-	// 							<ul className="list-player">
-	// 								<li><span>XMEN&nbsp;VinhTậpSút</span></li>
-	// 								<li><span>XMEN&nbsp;HùngPhương</span></li>
-	// 								<li><span>USA&nbsp;Kinh&nbsp;Tâm</span></li>
-	// 								<li><span>TimeMan8888</span></li>
-	// 							</ul>
-	// 						</div>
-	// 						<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/tooltip_bot.png" alt="" className="img-pop-bot" />
-	// 					</div>
-	// 				</div>
-	// 			</div>
+		return (
+			<>
+				{divA}
+			</>
+		)
+	}
 
-	// 			<div className="pos-2" data-tip="" data-for="tooltip-2" currentitem="false">
-	// 				<img src="https://cdn.vn.garenanow.com/fo3vn/project/Ranking/Cards/ICONS_Card.png" alt="" className="b-card" />
-	// 				<div className="wrap-player-info">
-	// 					<img src="https://cdn-fo4.garenanow.com/games/fo4vn/externalAssets/common/playersAction/p101214100.png" alt="" className="player-avatar" /><span className="player-name">R. Gullit</span>
-	// 					<span className="player-grade"><img src="http://cdn.vn.garenanow.com/fo3vn/project/Ranking/Grade/+7.png" alt="" /></span><span className="player-overal">124</span><span className="player-salary">29</span>
-	// 					<span className="player-pos">FW</span>
-	// 				</div>
-	// 				<span className="b-player-name">
-	// 					<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/b-player-name.png" alt="" />
-	// 					<div className="wrap-p-name-txt">
-	// 						<span>35,300,000,000,000 BP</span>
-	// 						<hr />
-	// 						<span>hongkhoanx</span>
-	// 					</div>
-	// 				</span>
-	// 				<div className="__react_component_tooltip place-right type-light" id="tooltip-2" data-id="tooltip" style={{left: "512px", top: "59px", display: "none"}}>
-	// 					<div className="tool-tip-prod">
-	// 						<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/tooltip_top.png" alt="" className="img-pop-top" />
-	// 						<div className="tooltip-content">
-	// 							<div className="icon"><img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/t_logo_1.png" alt="" /></div>
-	// 							<ul className="list-player">
-	// 								<li><span>hongkhoanx</span></li>
-	// 							</ul>
-	// 						</div>
-	// 						<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/tooltip_bot.png" alt="" className="img-pop-bot" />
-	// 					</div>
-	// 				</div>
-	// 			</div>
+	const PositionLB = ({ all_stars }) => {
+		const divA = all_stars.players.map((fw, i)=> {
+			let pos = `pos-${(i+7)}`
+			let tooltip = `tooltip-${i+7}`
+			let imgCard = fw.card
+			let playerAvatar = `https://cdn-fo4.garenanow.com/games/fo4vn/externalAssets/common/${fw.image}`
+			let playerName = fw.name
+			let playerGrade = `http://cdn.vn.garenanow.com/fo3vn/project/Ranking/Grade/+${fw.grade}.png`
+			let playerOveral = fw.overall
+			let playerSalary = fw.salary
+			let playerPos = fw.pre_pos
+			let playerPrice = `${fw.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} BP`
+			let listOwner = fw.owner;
+			return (
+				<>
+					<div key={fw.spid} className={pos} data-tip="" data-for={tooltip} currentitem="false">
+						<img src={imgCard} alt="" className="b-card" />
+						<div className="wrap-player-info">
+							<img src={playerAvatar} alt="" className="player-avatar" />
+							<span className="player-name">{playerName}</span>
+							<span className="player-grade">
+								<img src={playerGrade} alt="" />
+							</span>
+							<span className="player-overal">{playerOveral}</span>
+							<span className="player-salary">{playerSalary}</span>
+							<span className="player-pos">{playerPos}</span>
+						</div>
+						<span className="b-player-name">
+							<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/b-player-name.png" alt="" />
+							<div className="wrap-p-name-txt">
+								<span>{playerPrice}</span>
+								<hr />
+								<marquee behavior="" direction="" scrollamount="3" className="bi">
+									{
+										listOwner.length > 0 ? 
+											listOwner.map(owner => {
+												return (
+													<>
+														<span>{owner.name}</span>
+													</>
+												)
+											})
+										: <></>
+									}
+									</marquee>
+							</div>
+						</span>
+						<div className="__react_component_tooltip place-right type-light" id="tooltip-1" data-id="tooltip" style={{left: "377px", top: "103px", display: "none"}}>
+							<div className="tool-tip-prod">
+								<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/tooltip_top.png" alt="" className="img-pop-top" />
+								<div className="tooltip-content">
+									<div className="icon"><img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/t_logo_1.png" alt="" /></div>
+									<ul className="list-player">
+										{
+											listOwner.length > 0 ? 
+											listOwner.map(owner => {
+												return (
+													<>
+														<li><span>{owner.name}</span></li>
+													</>
+												)
+											})
+										: <></>
+										}
+									</ul>
+								</div>
+								<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/tooltip_bot.png" alt="" className="img-pop-bot" />
+							</div>
+						</div>
+					</div>
+				</>
+			)
+		})
+		
+		return (
+			<>
+				{divA}
+			</>
+		)
+	}
 
-	// 			<div className="pos-3" data-tip="" data-for="tooltip-3" currentitem="false">
-	// 				<img src="https://cdn.vn.garenanow.com/fo3vn/project/Ranking/Cards/22TOTY_Card.png" alt="" className="b-card" />
-	// 				<div className="wrap-player-info">
-	// 					<img src="https://cdn-fo4.garenanow.com/games/fo4vn/externalAssets/common/playersAction/p258188545.png" alt="" className="player-avatar" /><span className="player-name">R. Lewandowski</span>
-	// 					<span className="player-grade"><img src="http://cdn.vn.garenanow.com/fo3vn/project/Ranking/Grade/+8.png" alt="" /></span><span className="player-overal">125</span><span className="player-salary">26</span>
-	// 					<span className="player-pos">FW</span>
-	// 				</div>
-	// 				<span className="b-player-name">
-	// 					<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/b-player-name.png" alt="" />
-	// 					<div className="wrap-p-name-txt">
-	// 						<span>10,600,000,000,000 BP</span>
-	// 						<hr />
-	// 						<span>Porsche911xCoupe</span>
-	// 					</div>
-	// 				</span>
-	// 				<div className="__react_component_tooltip place-right type-light" id="tooltip-3" data-id="tooltip" style={{left: "601px", top: "159px", display: "none"}}>
-	// 					<div className="tool-tip-prod">
-	// 						<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/tooltip_top.png" alt="" className="img-pop-top" />
-	// 						<div className="tooltip-content">
-	// 							<div className="icon"><img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/t_logo_1.png" alt="" /></div>
-	// 							<ul className="list-player">
-	// 								<li><span>Porsche911xCoupe</span></li>
-	// 							</ul>
-	// 						</div>
-	// 						<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/tooltip_bot.png" alt="" className="img-pop-bot" />
-	// 					</div>
-	// 				</div>
-	// 			</div>
-	// 		</>
-	// 	)
-	// }
+	const PositionCB = ({ all_stars }) => {
+		const divA = all_stars.players.map((fw, i)=> {
+			let pos = `pos-${(i+8)}`
+			let tooltip = `tooltip-${i+8}`
+			let imgCard = fw.card
+			let playerAvatar = `https://cdn-fo4.garenanow.com/games/fo4vn/externalAssets/common/${fw.image}`
+			let playerName = fw.name
+			let playerGrade = `http://cdn.vn.garenanow.com/fo3vn/project/Ranking/Grade/+${fw.grade}.png`
+			let playerOveral = fw.overall
+			let playerSalary = fw.salary
+			let playerPos = fw.pre_pos
+			let playerPrice = `${fw.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} BP`
+			let listOwner = fw.owner;
+			return (
+				<>
+					<div key={fw.spid} className={pos} data-tip="" data-for={tooltip} currentitem="false">
+						<img src={imgCard} alt="" className="b-card" />
+						<div className="wrap-player-info">
+							<img src={playerAvatar} alt="" className="player-avatar" />
+							<span className="player-name">{playerName}</span>
+							<span className="player-grade">
+								<img src={playerGrade} alt="" />
+							</span>
+							<span className="player-overal">{playerOveral}</span>
+							<span className="player-salary">{playerSalary}</span>
+							<span className="player-pos">{playerPos}</span>
+						</div>
+						<span className="b-player-name">
+							<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/b-player-name.png" alt="" />
+							<div className="wrap-p-name-txt">
+								<span>{playerPrice}</span>
+								<hr />
+								<marquee behavior="" direction="" scrollamount="3" className="bi">
+									{
+										listOwner.length > 0 ? 
+											listOwner.map(owner => {
+												return (
+													<>
+														<span>{owner.name}</span>
+													</>
+												)
+											})
+										: <></>
+									}
+									</marquee>
+							</div>
+						</span>
+						<div className="__react_component_tooltip place-right type-light" id="tooltip-1" data-id="tooltip" style={{left: "377px", top: "103px", display: "none"}}>
+							<div className="tool-tip-prod">
+								<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/tooltip_top.png" alt="" className="img-pop-top" />
+								<div className="tooltip-content">
+									<div className="icon"><img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/t_logo_1.png" alt="" /></div>
+									<ul className="list-player">
+										{
+											listOwner.length > 0 ? 
+											listOwner.map(owner => {
+												return (
+													<>
+														<li><span>{owner.name}</span></li>
+													</>
+												)
+											})
+										: <></>
+										}
+									</ul>
+								</div>
+								<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/tooltip_bot.png" alt="" className="img-pop-bot" />
+							</div>
+						</div>
+					</div>
+				</>
+			)
+		})
+		
+		return (
+			<>
+				{divA}
+			</>
+		)
+	}
+
+	const PositionRB = ({ all_stars }) => {
+		const divA = all_stars.players.map((fw, i)=> {
+			let pos = `pos-${(i+10)}`
+			let tooltip = `tooltip-${i+10}`
+			let imgCard = fw.card
+			let playerAvatar = `https://cdn-fo4.garenanow.com/games/fo4vn/externalAssets/common/${fw.image}`
+			let playerName = fw.name
+			let playerGrade = `http://cdn.vn.garenanow.com/fo3vn/project/Ranking/Grade/+${fw.grade}.png`
+			let playerOveral = fw.overall
+			let playerSalary = fw.salary
+			let playerPos = fw.pre_pos
+			let playerPrice = `${fw.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} BP`
+			let listOwner = fw.owner;
+			return (
+				<>
+					<div key={fw.spid} className={pos} data-tip="" data-for={tooltip} currentitem="false">
+						<img src={imgCard} alt="" className="b-card" />
+						<div className="wrap-player-info">
+							<img src={playerAvatar} alt="" className="player-avatar" />
+							<span className="player-name">{playerName}</span>
+							<span className="player-grade">
+								<img src={playerGrade} alt="" />
+							</span>
+							<span className="player-overal">{playerOveral}</span>
+							<span className="player-salary">{playerSalary}</span>
+							<span className="player-pos">{playerPos}</span>
+						</div>
+						<span className="b-player-name">
+							<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/b-player-name.png" alt="" />
+							<div className="wrap-p-name-txt">
+								<span>{playerPrice}</span>
+								<hr />
+								<marquee behavior="" direction="" scrollamount="3" className="bi">
+									{
+										listOwner.length > 0 ? 
+											listOwner.map(owner => {
+												return (
+													<>
+														<span>{owner.name}</span>
+													</>
+												)
+											})
+										: <></>
+									}
+									</marquee>
+							</div>
+						</span>
+						<div className="__react_component_tooltip place-right type-light" id="tooltip-1" data-id="tooltip" style={{left: "377px", top: "103px", display: "none"}}>
+							<div className="tool-tip-prod">
+								<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/tooltip_top.png" alt="" className="img-pop-top" />
+								<div className="tooltip-content">
+									<div className="icon"><img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/t_logo_1.png" alt="" /></div>
+									<ul className="list-player">
+										{
+											listOwner.length > 0 ? 
+											listOwner.map(owner => {
+												return (
+													<>
+														<li><span>{owner.name}</span></li>
+													</>
+												)
+											})
+										: <></>
+										}
+									</ul>
+								</div>
+								<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/tooltip_bot.png" alt="" className="img-pop-bot" />
+							</div>
+						</div>
+					</div>
+				</>
+			)
+		})
+		
+		return (
+			<>
+				{divA}
+			</>
+		)
+	}
+
+	const PositionGK = ({ all_stars }) => {
+		const divA = all_stars.players.map((fw, i)=> {
+			let pos = `pos-${(i+11)}`
+			let tooltip = `tooltip-${i+11}`
+			let imgCard = fw.card
+			let playerAvatar = `https://cdn-fo4.garenanow.com/games/fo4vn/externalAssets/common/${fw.image}`
+			let playerName = fw.name
+			let playerGrade = `http://cdn.vn.garenanow.com/fo3vn/project/Ranking/Grade/+${fw.grade}.png`
+			let playerOveral = fw.overall
+			let playerSalary = fw.salary
+			let playerPos = fw.pre_pos
+			let playerPrice = `${fw.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} BP`
+			let listOwner = fw.owner;
+			return (
+				<>
+					<div key={fw.spid} className={pos} data-tip="" data-for={tooltip} currentitem="false">
+						<img src={imgCard} alt="" className="b-card" />
+						<div className="wrap-player-info">
+							<img src={playerAvatar} alt="" className="player-avatar" />
+							<span className="player-name">{playerName}</span>
+							<span className="player-grade">
+								<img src={playerGrade} alt="" />
+							</span>
+							<span className="player-overal">{playerOveral}</span>
+							<span className="player-salary">{playerSalary}</span>
+							<span className="player-pos">{playerPos}</span>
+						</div>
+						<span className="b-player-name">
+							<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/b-player-name.png" alt="" />
+							<div className="wrap-p-name-txt">
+								<span>{playerPrice}</span>
+								<hr />
+								<marquee behavior="" direction="" scrollamount="3" className="bi">
+									{
+										listOwner.length > 0 ? 
+											listOwner.map(owner => {
+												return (
+													<>
+														<span>{owner.name}</span>
+													</>
+												)
+											})
+										: <></>
+									}
+									</marquee>
+							</div>
+						</span>
+						<div className="__react_component_tooltip place-right type-light" id="tooltip-1" data-id="tooltip" style={{left: "377px", top: "103px", display: "none"}}>
+							<div className="tool-tip-prod">
+								<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/tooltip_top.png" alt="" className="img-pop-top" />
+								<div className="tooltip-content">
+									<div className="icon"><img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/t_logo_1.png" alt="" /></div>
+									<ul className="list-player">
+										{
+											listOwner.length > 0 ? 
+											listOwner.map(owner => {
+												return (
+													<>
+														<li><span>{owner.name}</span></li>
+													</>
+												)
+											})
+										: <></>
+										}
+									</ul>
+								</div>
+								<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/tooltip_bot.png" alt="" className="img-pop-bot" />
+							</div>
+						</div>
+					</div>
+				</>
+			)
+		})
+		
+		return (
+			<>
+				{divA}
+			</>
+		)
+	}
 
 	let body = (
 		<>	
@@ -13140,7 +13449,12 @@ const Home = () => {
 				<div className="wrap-board">
     				<img src="https://cdn.vn.garenanow.com/web/fo3/fo4/fo4-hof-2019/images/pitch.png" alt="" class="base-img" />
 					<div className="wrap-position">
-						<PositionFW all_stars_fw={topAllStarts.FW} />
+						<PositionFW all_stars={topAllStarts.FW} />
+						<PositionMF all_stars={topAllStarts.MF} />
+						<PositionLB all_stars={topAllStarts.LB} />
+						<PositionCB all_stars={topAllStarts.CB} />
+						<PositionRB all_stars={topAllStarts.RB} />
+						<PositionGK all_stars={topAllStarts.GK} />
 					</div>
 				</div>
 			</section>

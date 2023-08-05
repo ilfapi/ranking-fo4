@@ -388,7 +388,8 @@ body {
 .best-formation .wrap-board {
     position: relative;
     display: inline-block;
-    margin-top: 8.5vw
+    margin-top: 8.5vw;
+    margin-bottom: 8.5vw;
 }
 
 .best-formation .wrap-board .base-img {
@@ -635,4 +636,23 @@ marquee span {
     text-transform: uppercase;
     display: inline-block;
     padding: .5vw
+}
+/* 404 */
+.error-content-holder{ text-align: center;}
+.error-content{ display: inline-block;}
+.error-content h1{ color: #333; font-size: 124px;} 
+.error-content h1 span{ color: #ccc; text-transform: uppercase; font-weight: 100;}
+.error-content h1 i{ font-size: 110px;}
+.error-content p{ text-transform: uppercase; font-size: 20px; color: #555;}
+.btn-back-to-home {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 42px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-size: 12px;
+    color: #fff;
 }
